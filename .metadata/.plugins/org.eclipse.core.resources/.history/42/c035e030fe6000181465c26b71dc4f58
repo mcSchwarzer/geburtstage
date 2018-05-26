@@ -25,7 +25,7 @@ public class Run {
 			for(int i = 0; i < Integer.parseInt(args[0]); i++){
 				System.out.println(bdpc.getBd_list().get(i)  + " Er/Sie wird in "  + 
 						bdpc.getBd_list().get(i).daysTillBirthday() + " Tagen "+ 
-						bdpc.getBd_list().get(i).getAge() + " Jahre alt.");
+						bdpc.getBd_list().get(i).getAge() + "Jahre alt");
 			}
 			Thread.sleep(5000);
 

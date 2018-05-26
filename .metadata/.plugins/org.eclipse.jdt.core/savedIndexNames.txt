@@ -1,6 +1,5 @@
 INDEX VERSION 1.130+C:\Users\marku\Desktop\birthdays\.metadata\.plugins\org.eclipse.jdt.core
 91472061.index
-1387084935.index
 2221491804.index
 194205294.index
 2561179376.index
