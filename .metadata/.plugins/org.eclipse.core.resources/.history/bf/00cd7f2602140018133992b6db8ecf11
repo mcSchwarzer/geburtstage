@@ -1,0 +1,47 @@
+package birthdayProjectV2;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class Person {
+
+	private String fname;
+	private String sname;
+	private ZonedDateTime birthday;
+	private int age;
+	private int phonenb;
+	private String email;
+	
+	public Person(String fname){
+		this.fname = fname;
+	}
+	public Person(String fname, String sname,ZonedDateTime bd, int pnb, String email){
+		this.fname = fname;
+		this.sname = sname;
+		this.birthday = bd;
+		this.phonenb = pnb;
+		this.email = email;
+		this.age = this.calcAge(bd);
+	}
+
+	private int calcAge(ZonedDateTime bd){
+		if(bd.equals(null)){
+			return 100;
+		}
+		ZonedDateTime now = ZonedDateTime.now();
+		System.out.println(bd.getYear() - now.getYear());
+		return (bd.getYear() - now.getYear());
+		
+	}
+	
+	
+	public static void main (String [] args){
+		ZoneId zid = ZoneId.systemDefault();
+		ZonedDateTime a = ZonedDateTime.now();
+
+		Person p = new Person("markus", "schwarzer", a, 87523421, "xyz");
+		
+		System.out.println(a.toString());
+		System.out.println(zid);
+	}
+}

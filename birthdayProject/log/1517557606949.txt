@@ -1,0 +1,6 @@
+Hi this is a program that keeps track of all the birthdays that you, your family or any otherperson has!
+For this to work you have to have a valid xml-file at "C:\Users\marku\Desktop\birthdays\xml\PersonenListe\XML_input.xml" that has to follow this xml-style in " C:\Users\marku\Desktop\birthdays\xml\PersonenListe\XML_style.xml"
+
+Press any key to start ...
+
+ERROR	error_while_reading_the_xml

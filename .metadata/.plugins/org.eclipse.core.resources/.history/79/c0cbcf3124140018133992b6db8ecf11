@@ -1,0 +1,101 @@
+package birthdayProjectV2;
+
+import java.time.MonthDay;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+
+public class Person {
+
+	/**add bindings for JSON**/
+	
+	private String fname;
+	private String sname;
+	private int phonenb;
+	private String email;
+	private long age;
+
+	
+	public Person(String fname){
+		this.fname = fname;
+	}
+	public Person(String fname, String sname, int pnb, String email, ZonedDateTime zdt) throws IllegalArgumentException{
+		this.fname = fname;
+		this.sname = sname;
+		this.phonenb = pnb;
+		this.email = email;
+		this.age = this.calcAge(zdt);
+	}
+
+	public long calcAge(ZonedDateTime bd)throws IllegalArgumentException{
+		if(bd.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null! " + "calcAge()");
+		}
+		return bd.until(ZonedDateTime.now(), ChronoUnit.YEARS);
+	}
+	
+	public static boolean hasBirthday(ZonedDateTime zdt)throws IllegalArgumentException{
+		MonthDay now = MonthDay.now();
+		if(zdt.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null! " + " hasBirthday()");
+		}
+		if(now.equals(dayOfBirthToMonthDay(zdt))){
+			return true;
+		}
+		return false;
+	}
+	
+	public static MonthDay dayOfBirthToMonthDay(ZonedDateTime zdt){
+		return MonthDay.of(zdt.getMonthValue(), zdt.getDayOfMonth());
+	}
+	
+	public String getBirthdayMessage(){
+		return ("Hi " + this.fname + ". Alles Gute zum" + this.age + "ten Geburtstag!");
+	}
+	
+	/***
+	 * 
+	 * @return long : amount of days till the next Birthday or 0 if it is today
+	 */
+	public long getDaysTillBirthday(ZonedDateTime dayOfBirth){
+		ZonedDateTime now = ZonedDateTime.now();
+
+		return now.until(dayOfBirth.plusYears(this.age+1), ChronoUnit.DAYS) +1;
+	}
+
+
+	public String getFname() {
+		return fname;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public int getPhonenb() {
+		return phonenb;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public void setPhonenb(int phonenb) {
+		this.phonenb = phonenb;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public long getAge() {
+		return age;
+	}
+	public void setAge(long age) {
+		this.age = age;
+	}
+	
+	@Override 
+	public String toString(){
+		return (this.fname + " " + this.sname + ", ( " + this.email + ", " + this.phonenb + " )");
+	}
+}

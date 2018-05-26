@@ -1,0 +1,49 @@
+package logic;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import xml.Commons;
+
+public class Logic implements Commons{
+
+	public static int DateDifference(int day, int month, int year) {
+        Calendar cal1 = new GregorianCalendar();
+        Calendar cal2 = new GregorianCalendar();
+        cal2.set(cal1.get(Calendar.YEAR),month-1, day);
+
+        return Math.abs(daysBetween(cal1.getTime(),cal2.getTime()));
+    }
+	
+	public static long newDateDifference(LocalDate date){
+		LocalDate today = LocalDate.now();
+		long daysBetween = today.until(LocalDate.of(date.getYear() + today.getYear() - date.getYear() + 1  , date.getMonthValue(), date.getDayOfMonth()), ChronoUnit.DAYS);
+		if(){
+			
+		}
+		
+		return daysBetween;
+	}
+	
+
+    public static int daysBetween(Date d1, Date d2) {
+        return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24));
+    }
+    
+    public static int getAge(int day, int month, int year){
+    	Calendar cal1 = new GregorianCalendar();
+        Calendar cal2 = new GregorianCalendar();
+        cal2.set(year, month, day);
+        
+    	return (int) Math.abs(daysBetween(cal2.getTime(),cal1.getTime())/365);
+    }  
+    
+    public static void main (String[] args){
+    	System.out.println(newDateDifference(LocalDate.of(1998, 26, 5)));
+    }
+}

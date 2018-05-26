@@ -1,0 +1,133 @@
+package birthdayProjectV2;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeSet;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class PersonList {
+
+	PersonComparator pc = new PersonComparator();
+	private TreeSet<ZonedDateTime> birthdaySet = new TreeSet<ZonedDateTime>(pc);
+	
+	private Map<ZonedDateTime, Person> bdPerson = new HashMap<>();
+	
+	public PersonList(){
+		
+	}
+
+	
+	public boolean insert (){
+		
+		return false;
+	}
+
+	public void add(Person p) {
+		bdPerson.put(p.getDayOfBirth(), p);	//relativly long adding process
+		birthdaySet.add(p.getDayOfBirth());
+	}
+	
+	public Person search(ZonedDateTime today){
+		if(birthdaySet.contains(today)){
+			return bdPerson.get(today);	//super fast searchMethod() works with log(n) complexity !
+		}
+		return null;
+	}
+	
+	
+	public ArrayList<Person> searchforDay(int fromMonth, int fromDay, int toMonth, int toDay){
+		SortedSet<ZonedDateTime> pppp = birthdaySet.subSet(ZonedDateTime.of(1900, fromMonth, fromDay, 0, 0, 0, 0, ZoneId.systemDefault()), 
+				ZonedDateTime.of(2018,toMonth, toDay,23,59,59,0,ZoneId.systemDefault()));
+		ArrayList<Person> pp = new ArrayList<Person>();
+		for(ZonedDateTime zdt : pppp){
+			pp.add(bdPerson.get(zdt));
+		}
+		return pp;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	public static void main(String [] args){
+
+		
+		long l = 524362362;
+		System.out.println((int) l);
+		
+		PersonList pl = new PersonList();
+
+		ArrayList<Person> al = new ArrayList<Person>();
+		for(int i = 0; i < 1000000; i++){ //1 mio.
+			int year = ThreadLocalRandom.current().nextInt(1940, (2017 + 1));
+			int month = ThreadLocalRandom.current().nextInt(1, (12 + 1));
+			int day = ThreadLocalRandom.current().nextInt(1, (30 + 1));
+			if(month == 2 && day > 28){day = 28;}
+			
+			ZonedDateTime bday = ZonedDateTime.of(year, month, day, 0, 0, 0, 0, ZoneId.systemDefault());
+			Person per = new Person(("Vorname" + Integer.toString(i)), "Nachname" + Integer.toString(i), i, Integer.toString(i) + "@gmx.de", bday);
+			al.add(per);
+		}
+		System.out.println("prepared all");
+		
+		long timer = System.currentTimeMillis();
+		for(Person p : al){
+			pl.add(p);
+		}
+		
+		ZonedDateTime zdt = ZonedDateTime.of(1998, 4, 5, 0, 0, 0, 0, ZoneId.systemDefault());
+		Person a = new Person("Markus", "Josua Schwarzer", 1752375649, "markus.schwarzer@hotmail.de", zdt);
+		pl.add(a);
+		long timer1 = System.currentTimeMillis();
+		System.out.println("adding took: " + (timer1-timer) + "seconds");
+		
+		timer = System.currentTimeMillis();
+		
+		Person pipapo = pl.search(a.getDayOfBirth());
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		timer1 = System.currentTimeMillis();
+		
+		System.out.println("that took " + ((timer1 - timer) - 1000) + "milliseconds");
+
+		System.out.println(a);
+		System.out.println(pipapo.getFname() + " " + pipapo.getDayOfBirth());
+		System.out.println(a.getFname() + " " + a.getDayOfBirth());
+		
+		
+		ArrayList<Person> p = pl.searchforDay(4, 3, 4, 6);
+		int cnt = 0;
+		for(Person pi : p){
+			System.out.println(pi); cnt++;
+		}
+		System.out.println(cnt + "hits");
+	}
+	
+	
+	public class PersonComparator implements Comparator<ZonedDateTime>{
+
+		@Override
+		public int compare(ZonedDateTime o1, ZonedDateTime o2) {
+			return (o1.getDayOfYear() - o1.getDayOfYear());
+		}
+
+	
+		
+	}
+}

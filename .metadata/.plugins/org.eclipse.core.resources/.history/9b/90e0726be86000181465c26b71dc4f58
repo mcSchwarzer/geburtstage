@@ -1,0 +1,64 @@
+package run;
+
+import java.io.PrintStream;
+import javax.xml.bind.JAXBException;
+import logic.Logic;
+import xml.Commons;
+
+public class Run {
+	public static void main (String args[]){
+		PrintStream ps = Commons.printStreamCreater();
+		Commons.writeSth(xml.Commons.startingText, ps);
+		Commons.scan.nextLine();
+		
+		xml.BDP geburtstagsKind = null;
+		xml.BDPC bdpc = null;
+		try {
+			bdpc = xml.XmlOps.readXmlInput(ps);
+		} catch (JAXBException e) {
+			e.printStackTrace();
+			Commons.writeSth("ERROR\terror_while_reading_the_xml", ps);
+		}
+
+		long timer = System.currentTimeMillis();
+		int days = Commons.daysOfYear;
+		for(xml.BDP bdp : bdpc.getBd_list()){
+			int checkDay = Logic.DateDifference(bdp.getBd().getDay(), bdp.getBd().getMonth(), bdp.getBd().getYear());
+			if(days > checkDay){
+				geburtstagsKind = bdp;
+				days = checkDay;
+			}
+		
+			Commons.writeSth(("TAGE: " + Logic.DateDifference(bdp.getBd().getDay(), 
+											bdp.getBd().getMonth(), 
+											bdp.getBd().getYear()) 	+ "  \t" + bdp.getBdp_name() + ", " + bdp.getBdp_second_name() + ", "
+																	+ bdp.getBdp_extra()),ps);
+		}
+		
+		if(geburtstagsKind != null && Logic.DateDifference(geburtstagsKind.getBd().getDay(), 
+									geburtstagsKind.getBd().getMonth(), 
+									geburtstagsKind.getBd().getYear())
+				<= 0)
+		{
+			Commons.writeSth(("HEUTE HAT JEMAND GEBURTSTAG !!!\n"
+					+ geburtstagsKind.getBdp_name() + " prio = " + geburtstagsKind.getLvl()),ps);
+			
+		}
+		Commons.writeSth(("INFO\tDer nächste Geburtstag ist in " + Logic.DateDifference(geburtstagsKind.getBd().getDay(), 
+																					geburtstagsKind.getBd().getMonth(), 
+																					geburtstagsKind.getBd().getYear()) 
+		+ " Tagen (" + geburtstagsKind.getBdp_name() + ") --> prio: " + geburtstagsKind.getLvl()),ps);
+		
+		Commons.writeSth(("INFO\tthe_birthdayCHECK_has_finished [" + (System.currentTimeMillis() - timer) + " ms]\n"
+				+ "Press any key ..."),ps);
+		
+		Commons.scan.nextLine();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

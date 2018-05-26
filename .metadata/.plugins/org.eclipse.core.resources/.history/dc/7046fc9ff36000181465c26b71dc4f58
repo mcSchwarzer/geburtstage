@@ -1,0 +1,33 @@
+package run;
+
+import java.util.ArrayList;
+
+import logic.Logic;
+import xml.BDP;
+
+public class Run {
+	public static void main (String args[]){
+		
+		try{
+
+			xml.BDPC bdpc = null;
+			bdpc = xml.XmlOps.readXmlInput();
+
+
+			for(xml.BDP bdp : bdpc.getBd_list()){
+				if(Logic.hasBirthday(bdp)){
+					System.out.println(bdp.getBdp_name() + " hat Geburtstag! Er/Sie wird " + Logic.getAge(bdp) + " Jahre alt.");
+				}
+			}
+			bdpc.sort();
+			for (BDP bdp : bdpc.getBd_list()) {
+				System.out.println(bdp);
+			}
+
+
+
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+}

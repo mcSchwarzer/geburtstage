@@ -1,0 +1,46 @@
+package logic;
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+import xml.BDP;
+import xml.Commons;
+
+public class Logic implements Commons{
+	
+	public static long DateDifference(BDP bdp){
+		LocalDate date = getBirthday(bdp);
+		LocalDate today = LocalDate.now();
+		long daysBetween = today.until(LocalDate.of(date.getYear() + today.getYear() - date.getYear() + 1  , date.getMonthValue(), date.getDayOfMonth()), ChronoUnit.DAYS);
+		if(today.isLeapYear()){
+			if(daysBetween >= 366){
+				return daysBetween - 366;
+			}
+		}
+		else{
+			if(daysBetween >= 365){
+				return daysBetween - 365;
+			}
+		}
+		return daysBetween;
+	}
+	
+	public static long getAge(xml.BDP bdp){
+		LocalDate date = getBirthday(bdp);
+		LocalDate today = LocalDate.now();
+		long age = date.until(today, ChronoUnit.YEARS);
+		
+		return age;
+	}
+	
+	public static boolean hasBirthday(xml.BDP bdayPerson){
+		if(DateDifference(bdayPerson) == 0){
+			return true;
+		}
+		return false;
+	}
+	
+	public static LocalDate getBirthday(xml.BDP bdayPerson){
+		return LocalDate.of(bdayPerson.getBd().getYear(), bdayPerson.getBd().getMonth(), bdayPerson.getBd().getDay());
+	}
+}

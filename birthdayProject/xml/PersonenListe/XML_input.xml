@@ -1,0 +1,162 @@
+<bdpc>
+	<bdp id="0" lvl="2">
+		<bdp_name>Markus</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>5</bd_day>
+			<bd_month>4</bd_month>
+			<bd_year>1998</bd_year>	
+		</bd>
+		<bdp_extra>Das bin ich selbst!</bdp_extra>
+	</bdp>
+	<bdp id="1" lvl="0">
+		<bdp_name>Werner</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>4</bd_day>
+			<bd_month>2</bd_month>
+			<bd_year>1949</bd_year>	
+		</bd>
+		<bdp_extra>PAPA</bdp_extra>
+	</bdp>
+	<bdp id="2" lvl="0">
+		<bdp_name>Marion Ingeborg Erika</bdp_name>
+		<bdp_second_name>Dittberner</bdp_second_name>
+		<bd>
+			<bd_day>21</bd_day>
+			<bd_month>9</bd_month>
+			<bd_year>1957</bd_year>	
+		</bd>
+		<bdp_extra>MAMA</bdp_extra>
+	</bdp>
+	<bdp id="3" lvl="0">
+		<bdp_name>Johannes Christian</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>9</bd_day>
+			<bd_month>2</bd_month>
+			<bd_year>1993</bd_year>	
+		</bd>
+		<bdp_extra>Bruder</bdp_extra>
+	</bdp>
+	<bdp id="4" lvl="0">
+		<bdp_name>Rebekka Christa</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>9</bd_day>
+			<bd_month>10</bd_month>
+			<bd_year>1991</bd_year>	
+		</bd>
+		<bdp_extra>Schwester</bdp_extra>
+	</bdp>
+	<bdp id="5" lvl="0">
+		<bdp_name>Samuel</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>25</bd_day>
+			<bd_month>4</bd_month>
+			<bd_year>1989</bd_year>	
+		</bd>
+		<bdp_extra>Bruder</bdp_extra>
+	</bdp>
+	<bdp id="6" lvl="0">
+		<bdp_name>Benjamin</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>14</bd_day>
+			<bd_month>12</bd_month>
+			<bd_year>1976</bd_year>	
+		</bd>
+		<bdp_extra>Bruder</bdp_extra>
+	</bdp>
+	<bdp id="7" lvl="1">
+		<bdp_name>Ulrike</bdp_name>
+		<bdp_second_name>Haertel</bdp_second_name>
+		<bd>
+			<bd_day>30</bd_day>
+			<bd_month>11</bd_month>
+			<bd_year>1961</bd_year>	
+		</bd>
+		<bdp_extra></bdp_extra>
+	</bdp>
+	<bdp id="8" lvl="2">
+		<bdp_name>Susann</bdp_name>
+		<bdp_second_name>Scheler</bdp_second_name>
+		<bd>
+			<bd_day>3</bd_day>
+			<bd_month>3</bd_month>
+			<bd_year>1975</bd_year>	
+		</bd>
+		<bdp_extra>Suse vom Datentest ("Das Lexikon")</bdp_extra>
+	</bdp>
+	<bdp id="9" lvl="2">
+		<bdp_name>Guido</bdp_name>
+		<bdp_second_name>Spreitzer</bdp_second_name>
+		<bd>
+			<bd_day>18</bd_day>
+			<bd_month>10</bd_month>
+			<bd_year>1968</bd_year>	
+		</bd>
+		<bdp_extra>Datentest</bdp_extra>
+	</bdp>	
+	<bdp id="10" lvl="2">
+		<bdp_name>Damaris</bdp_name>
+		<bdp_second_name>Giek</bdp_second_name>
+		<bd>
+			<bd_day>20</bd_day>
+			<bd_month>2</bd_month>
+			<bd_year>1980</bd_year>
+		</bd>
+		<bdp_extra>Datentest</bdp_extra>
+	</bdp>
+		<bdp id="11" lvl="0">
+		<bdp_name>Yasmin</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>19</bd_day>
+			<bd_month>4</bd_month>
+			<bd_year>1986</bd_year>
+		</bd>
+		<bdp_extra></bdp_extra>
+	</bdp>
+	<bdp id="12" lvl="0">
+		<bdp_name>Lisa</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>22</bd_day>
+			<bd_month>8</bd_month>
+			<bd_year>2009</bd_year>
+		</bd>
+		<bdp_extra>Nichte</bdp_extra>
+	</bdp>
+	<bdp id="13" lvl="1">
+		<bdp_name>Sten</bdp_name>
+		<bdp_second_name>Küster</bdp_second_name>
+		<bd>
+			<bd_day>1</bd_day>
+			<bd_month>5</bd_month>
+			<bd_year>1992</bd_year>
+		</bd>
+		<bdp_extra>Schwager</bdp_extra>
+	</bdp>
+	<bdp id="14" lvl="1">
+		<bdp_name>Rolf Dieter</bdp_name>
+		<bdp_second_name>Dittberner</bdp_second_name>
+		<bd>
+			<bd_day>5</bd_day>
+			<bd_month>9</bd_month>
+			<bd_year>1956</bd_year>
+		</bd>
+		<bdp_extra>Der Rollo</bdp_extra>
+	</bdp>
+	<bdp id="15" lvl="1">
+		<bdp_name>Chantal</bdp_name>
+		<bdp_second_name>Schwarzer</bdp_second_name>
+		<bd>
+			<bd_day>10</bd_day>
+			<bd_month>9</bd_month>
+			<bd_year>1991</bd_year>
+		</bd>
+		<bdp_extra>Schwägerin</bdp_extra>
+	</bdp>	
+</bdpc>

@@ -1,0 +1,26 @@
+package birthdayProjectV2;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+
+public class Person {
+	
+	String name;
+	ZonedDateTime birthday;
+	
+	
+	
+	public Person(){
+		
+	}
+
+	
+	public static void main (String [] args){
+		ZoneId zid = ZoneId.systemDefault();
+		ZonedDateTime a = ZonedDateTime.of(1950, 2, 4, 0, 0, 0, 0, zid);
+		
+		System.out.println(a.toString());
+		System.out.println(zid);
+	}
+}

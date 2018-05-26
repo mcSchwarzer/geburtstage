@@ -1,0 +1,16 @@
+package logic;
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+import xml.BDP;
+import xml.Commons;
+
+public class Logic implements Commons{
+	
+
+
+	
+
+	
+}

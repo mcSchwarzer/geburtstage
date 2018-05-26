@@ -1,0 +1,19 @@
+Hi this is a program that keeps track of all the birthdays that you, your family or any otherperson has!
+For this to work you have to have a valid xml-file at "C:\Users\marku\Desktop\birthdays\xml\PersonenListe\XML_input.xml" that has to follow this xml-style in " C:\Users\marku\Desktop\birthdays\xml\PersonenListe\XML_style.xml"
+
+Press any key to start ...
+
+INFO	 xml_read("C:\Users\marku\Desktop\birthdays\xml\PersonenListe\XML_input.xml") [202 ms]
+TAGE: 65  	Markus, Schwarzer, Das bin ich selbst!
+TAGE: 6  	Werner, Schwarzer, PAPA
+TAGE: 234  	Marion, Dittberner, MAMA
+TAGE: 11  	Johannes, Schwarzer, Bruder
+TAGE: 252  	Rebekka, Schwarzer, Schwester
+TAGE: 85  	Samuel, Schwarzer, Bruder
+TAGE: 319  	Benjamin, Schwarzer, Bruder
+TAGE: 305  	Ulrike, Haertel, Schwester von Papa
+TAGE: 33  	Susann, Scheler, Suse vom Datentest ("Das Lexikon")
+TAGE: 261  	Guido, , Datentest
+INFO	Der nächste Geburtstag ist in 6 Tagen (Werner) --> prio: 0
+INFO	the_birthdayCHECK_has_finished [27 ms]
+Press any key ...

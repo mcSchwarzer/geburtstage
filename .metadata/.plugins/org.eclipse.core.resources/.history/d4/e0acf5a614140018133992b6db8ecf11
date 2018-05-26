@@ -1,0 +1,108 @@
+package birthdayProjectV2;
+
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+
+public class Person {
+
+	/**add bindings for JSON**/
+	
+	private String fname;
+	private String sname;
+	private ZonedDateTime birthday;
+	private int age;
+	private int phonenb;
+	private String email;
+	
+	public Person(String fname){
+		this.fname = fname;
+	}
+	public Person(String fname, String sname,ZonedDateTime bd, int pnb, String email) throws IllegalArgumentException{
+		this.fname = fname;
+		this.sname = sname;
+		this.birthday = bd;
+		this.phonenb = pnb;
+		this.email = email;
+		this.age = this.calcAge(bd);
+	}
+
+	private int calcAge(ZonedDateTime bd)throws IllegalArgumentException{
+		if(bd.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null! " + this.toString() + "calcAge()");
+		}
+		ZonedDateTime now = ZonedDateTime.now();
+		return (now.getYear() - bd.getYear());
+	}
+	
+	public boolean hasBirthday()throws IllegalArgumentException{
+		ZonedDateTime now = ZonedDateTime.now();
+		if(this.birthday.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null! " + this.toString() + " hasBirthday()");
+		}
+		if(now.isEqual(this.birthday)){
+			return true;
+		}
+		return false;
+	}
+	
+	public String getBirthdayMessage(){
+		return ("Hi " + this.fname + ". Alles Gute zum" + this.age + "ten Geburtstag!");
+	}
+	
+	public int getDaysTillBirthday(){
+		ZonedDateTime now = ZonedDateTime.now();
+		if(now.isBefore(this.birthday)){
+			return ((int) now.until(this.birthday, ChronoUnit.DAYS) );
+		}
+		else if(now.isEqual(this.birthday)){
+			return 0;
+		}
+		else if(now.isAfter(this.birthday)){
+			//return ((int) this.birthday.until(now, ChronoUnit.DAYS) - (this.age*365));
+		}
+		return 0;
+	}
+	
+	public String getFname() {
+		return fname;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public ZonedDateTime getBirthday() {
+		return birthday;
+	}
+	public int getAge() {
+		return age;
+	}
+	public int getPhonenb() {
+		return phonenb;
+	}
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public void setBirthday(ZonedDateTime birthday) {
+		this.birthday = birthday;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void setPhonenb(int phonenb) {
+		this.phonenb = phonenb;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	@Override 
+	public String toString(){
+		return (this.fname + " " + this.sname + ", " + this.age + "( " + this.email + ", " + this.phonenb + " )");
+	}
+}

@@ -1,0 +1,54 @@
+package birthdayProjectV2;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+
+public class Person {
+
+	private String fname;
+	private String sname;
+	private ZonedDateTime birthday;
+	private int age;
+	private int phonenb;
+	private String email;
+	
+	public Person(String fname){
+		this.fname = fname;
+	}
+	public Person(String fname, String sname,ZonedDateTime bd, int pnb, String email){
+		this.fname = fname;
+		this.sname = sname;
+		this.birthday = bd;
+		this.phonenb = pnb;
+		this.email = email;
+		this.age = this.calcAge(bd);
+	}
+
+	private int calcAge(ZonedDateTime bd){
+		if(bd.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null!" + this.toString());
+		}
+		ZonedDateTime now = ZonedDateTime.now();
+		return (now.getYear() - bd.getYear());
+	}
+	
+	public boolean hasBirthday(){
+		ZonedDateTime now = ZonedDateTime.now();
+		if(now.getDayOfMonth() == this.birthday.getDayOfMonth()
+				&& now.getMonth() == this.birthday.getMonth()){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	public static void main (String [] args){
+		ZoneId zid = ZoneId.systemDefault();
+		ZonedDateTime a = ZonedDateTime.of(1998, 5, 4, 0, 0, 0, 0, zid);
+
+		Person p = new Person("markus", "schwarzer", a, 87523421, "xyz");
+		
+		System.out.println(a.toString());
+		System.out.println(zid);
+	}
+}

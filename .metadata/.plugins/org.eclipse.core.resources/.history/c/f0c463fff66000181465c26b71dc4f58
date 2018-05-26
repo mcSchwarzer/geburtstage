@@ -1,0 +1,33 @@
+package run;
+
+import java.util.ArrayList;
+
+import xml.BDP;
+
+public class Run {
+	public static void main (String args[]){
+		
+		try{
+
+			xml.BDPC bdpc = null;
+			bdpc = xml.XmlOps.readXmlInput();
+
+
+			for(xml.BDP bdp : bdpc.getBd_list()){
+				if(bdp.hasBirthday()){
+					System.out.println(bdp.getBdp_name() + " hat Geburtstag! Er/Sie wird " + bdp.getAge() + " Jahre alt.");
+				}
+			}
+			bdpc.sort();
+			for (BDP bdp : bdpc.getBd_list()) {
+				System.out.println(bdp + "_ Tage bis zum Geburtstag: " + Logic.DateDifference(bdp));
+			}
+			System.out.println("Der nächste Geburtstag ist von " + bdpc.getBd_list().get(0));
+
+
+
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+}

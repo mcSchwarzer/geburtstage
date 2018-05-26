@@ -1,0 +1,2165 @@
+!SESSION 2018-01-27 13:34:44.183 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-27 13:35:12.677
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:43:34.843
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProject\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:43:35.033
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:43:35.046
+!MESSAGE Added core birthdayProject with classpath C:\Users\marku\Desktop\birthdays\birthdayProject\bin;C:\Users\marku\Downloads\commons-io-2.6-bin\commons-io-2.6\commons-io-2.6.jar;C:/Users/marku/AppData/Local/Temp/infinitest1156252156.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:43:35.049
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BPC.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:48:33.491
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:49:47.316
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 13:49:53.039
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BPC.class]
+
+!ENTRY org.eclipse.jface 4 0 2018-01-27 13:49:54.266
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Label.getText(Label.java:263)
+	at org.infinitest.eclipse.trim.StatusBar$2.run(StatusBar.java:109)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-01-27 13:49:54.293
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setToolTipText(Control.java:3884)
+	at org.infinitest.eclipse.trim.StatusBar$3.run(StatusBar.java:122)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-01-27 13:49:54.297
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Label.getText(Label.java:263)
+	at org.infinitest.eclipse.trim.StatusBar$2.run(StatusBar.java:109)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-01-27 13:49:54.307
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setToolTipText(Control.java:3884)
+	at org.infinitest.eclipse.trim.StatusBar$3.run(StatusBar.java:122)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-01-27 13:49:54.313
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setBackground(Control.java:3101)
+	at org.infinitest.eclipse.trim.StatusBar$1.run(StatusBar.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-01-27 13:49:54.319
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setForeground(Control.java:3495)
+	at org.infinitest.eclipse.trim.StatusBar$4.run(StatusBar.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+!SESSION 2018-01-27 13:53:27.517 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-27 13:53:46.809
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:19:23.155
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProject\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:19:23.187
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:19:23.200
+!MESSAGE Added core birthdayProject with classpath C:\Users\marku\Desktop\birthdays\birthdayProject\bin;C:\Users\marku\Downloads\commons-io-2.6-bin\commons-io-2.6\commons-io-2.6.jar;C:/Users/marku/AppData/Local/Temp/infinitest790695416.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:19:23.202
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:21:24.314
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:28:04.443
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:28:41.553
+!MESSAGE Files removed. Reloading birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:28:41.554
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:28:41.592
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:28:58.862
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:39:51.322
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:48:45.017
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 14:58:19.505
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:00:09.185
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:02:09.789
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:03:00.147
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:34:23.148
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:37:36.111
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:39:15.953
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:40:11.906
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:41:14.612
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:52:05.276
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:52:47.334
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:53:07.383
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:53:36.029
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:58:18.038
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 15:58:37.554
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:00:11.811
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:00:27.159
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:01:01.792
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:01:24.129
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:01:45.098
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:01:53.711
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:02:26.739
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:03:01.499
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:04:30.331
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:05:29.810
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:06:06.417
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:08:04.185
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:12:58.107
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:17:21.354
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:18:29.098
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:19:25.391
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:19:41.632
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:20:22.975
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:21:37.149
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:23:43.248
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:26:22.622
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:33:55.872
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:36:44.522
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:37:02.724
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:37:57.793
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:39:09.306
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:43:44.022
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:52:49.045
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:58:42.690
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:59:09.997
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:59:21.267
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 16:59:31.070
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:20:06.253
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:20:27.144
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:21:31.443
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:22:19.993
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:23:52.115
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:24:22.151
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:26:14.795
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:26:47.755
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:27:09.411
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:28:01.299
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:29:27.532
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:31:02.685
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:31:42.621
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:31:56.035
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:32:09.262
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:33:56.472
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:34:48.824
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:35:31.209
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:37:36.871
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:38:49.967
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:55:31.773
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 17:59:46.353
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:00:12.960
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:05:14.322
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:08:56.828
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:10:06.441
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:10:38.042
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:13:56.313
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:14:45.220
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2018-01-27 18:15:32.376
+!MESSAGE Failed to resolve selection in ‘=birthdayProject/src<run{Run.java’ at offset 2 037.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:164)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:16:07.109
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:16:10.339
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:16:11.643
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:16:55.429
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-01-27 18:17:15.669
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+!SESSION 2018-01-29 21:20:41.964 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-29 21:21:01.424
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-02-17 00:24:48.437 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-17 00:25:10.986
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-17 10:33:01.664
+!MESSAGE No repository found at http://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-17 10:33:10.269
+!MESSAGE No repository found at https://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 12:11:03.695
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProject\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 12:11:03.745
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 12:11:03.756
+!MESSAGE Added core birthdayProject with classpath C:\Users\marku\Desktop\birthdays\birthdayProject\bin;C:\Users\marku\Downloads\commons-io-2.6-bin\commons-io-2.6\commons-io-2.6.jar;C:/Users/marku/AppData/Local/Temp/infinitest.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 12:11:03.765
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.eclipse.jface 4 0 2018-02-17 12:11:04.235
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Label.getText(Label.java:263)
+	at org.infinitest.eclipse.trim.StatusBar$2.run(StatusBar.java:109)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-02-17 12:11:04.287
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setToolTipText(Control.java:3884)
+	at org.infinitest.eclipse.trim.StatusBar$3.run(StatusBar.java:122)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-02-17 12:11:04.292
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Label.getText(Label.java:263)
+	at org.infinitest.eclipse.trim.StatusBar$2.run(StatusBar.java:109)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-02-17 12:11:04.302
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setToolTipText(Control.java:3884)
+	at org.infinitest.eclipse.trim.StatusBar$3.run(StatusBar.java:122)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-02-17 12:11:04.305
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setBackground(Control.java:3101)
+	at org.infinitest.eclipse.trim.StatusBar$1.run(StatusBar.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+
+!ENTRY org.eclipse.jface 4 0 2018-02-17 12:11:04.308
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:481)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:242)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:463)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:309)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3117)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1206)
+	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1118)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1459)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1456)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1429)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1594)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1540)
+	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1626)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1623)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1637)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:524)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:629)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:99)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:315)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1728)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2547)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:506)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4897)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1656)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2199)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Control.setForeground(Control.java:3495)
+	at org.infinitest.eclipse.trim.StatusBar$4.run(StatusBar.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 76 more
+!SESSION 2018-02-17 17:10:37.168 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-17 17:10:53.171
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.459
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProject\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.490
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.502
+!MESSAGE Added core birthdayProject with classpath C:\Users\marku\Desktop\birthdays\birthdayProject\bin;C:\Users\marku\Downloads\commons-io-2.6-bin\commons-io-2.6\commons-io-2.6.jar;C:/Users/marku/AppData/Local/Temp/infinitest639766613.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.511
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.684
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProjectV2\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.685
+!MESSAGE Reloading core birthdayProjectV2
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.687
+!MESSAGE Added core birthdayProjectV2 with classpath C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin;C:/Users/marku/AppData/Local/Temp/infinitest639766613.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:12:03.688
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:25:38.624
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:26:54.744
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-17 17:35:28.401
+!MESSAGE No repository found at http://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-17 17:35:31.735
+!MESSAGE No repository found at https://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:41:32.994
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:41:49.847
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:41:58.011
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:42:15.388
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:43:02.976
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:46:15.463
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:46:50.373
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:47:07.269
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:47:30.690
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:53:16.312
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 17:53:34.583
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 18:07:39.897
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:07:15.410
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:09:09.360
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:09:45.456
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:32:28.878
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:33:16.401
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:40:47.604
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 19:59:16.960
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:00:13.864
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:00:48.588
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:38:05.015
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:52:27.319
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:52:38.869
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:53:02.445
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:53:18.303
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:56:52.022
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:57:46.319
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 20:59:43.165
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:02:18.605
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:05:27.341
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:06:09.657
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:06:17.819
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:08:31.169
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:09:18.863
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 21:57:59.500
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 22:23:40.554
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 22:39:15.005
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 22:40:52.367
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 22:42:42.687
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 22:42:51.254
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 22:43:05.550
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:18:00.448
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:18:20.611
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:18:40.758
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:19:47.311
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:20:30.058
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:20:46.068
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:21:11.046
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:22:25.631
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:22:44.085
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:23:05.514
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:23:37.879
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:28:27.807
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:28:41.943
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:31:41.528
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:32:09.750
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:40:57.967
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:41:08.852
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-17 23:41:36.710
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:14:51.871
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:16:22.006
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:17:34.890
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:32:11.168
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:38:28.939
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:39:12.715
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:41:16.127
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:43:56.172
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:46:48.592
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:47:58.183
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:48:24.004
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 00:51:30.008
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+!SESSION 2018-02-18 13:02:48.746 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-18 13:03:18.658
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-02-18 14:49:33.212 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-18 14:49:48.649
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-18 15:14:17.766
+!MESSAGE No repository found at http://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-18 15:14:24.721
+!MESSAGE No repository found at https://www.soapui.org/eclipse/update/site.xml.
+!SESSION 2018-02-18 20:22:15.491 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-18 20:23:23.366
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.566
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProject\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.643
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.651
+!MESSAGE Added core birthdayProject with classpath C:\Users\marku\Desktop\birthdays\birthdayProject\bin;C:\Users\marku\Downloads\commons-io-2.6-bin\commons-io-2.6\commons-io-2.6.jar;C:/Users/marku/AppData/Local/Temp/infinitest1773425026.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.655
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.886
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProjectV2\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.887
+!MESSAGE Reloading core birthdayProjectV2
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.888
+!MESSAGE Added core birthdayProjectV2 with classpath C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin;C:/Users/marku/Downloads/postgresql-42.2.1.jar;C:/Users/marku/AppData/Local/Temp/infinitest1773425026.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:00.891
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList$PersonComparator.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\Person.class, C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\PersonList.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:27:38.735
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:39:09.121
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:39:26.840
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:40:04.479
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:40:13.770
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:42:49.660
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:51:08.320
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:51:26.195
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-18 20:52:35.611
+!MESSAGE No repository found at http://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-02-18 20:52:45.846
+!MESSAGE No repository found at https://www.soapui.org/eclipse/update/site.xml.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:58:30.337
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-02-18 20:58:40.690
+!MESSAGE birthdayProjectV2 Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProjectV2\bin\birthdayProjectV2\DataBase.class]
+!SESSION 2018-05-26 15:14:43.128 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 4 567 2018-05-26 15:14:50.861
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2018-05-26 15:14:50.861
+!MESSAGE Could not read metadata for 'birthdayProjectV2'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'birthdayProjectV2' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:904)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:884)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:735)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1587)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2399)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2156)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:464)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:470)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2018-05-26 15:14:50.877
+!MESSAGE The project description file (.project) for 'birthdayProjectV2' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-05-26 15:15:01.322
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marku'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 4 567 2018-05-26 15:15:12.823
+!MESSAGE The project description file (.project) for 'birthdayProjectV2' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:28:49.640
+!MESSAGE Filter file C:\Users\marku\Desktop\birthdays\birthdayProject\infinitest.filters does not exist.
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:28:49.666
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:28:49.669
+!MESSAGE Added core birthdayProject with classpath C:\Users\marku\Desktop\birthdays\birthdayProject\bin;C:\Users\marku\Downloads\commons-io-2.6-bin\commons-io-2.6\commons-io-2.6.jar;C:/Users/marku/AppData/Local/Temp/infinitest.jar
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:28:49.669
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:30:45.547
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2018-05-26 15:35:07.152
+!MESSAGE The model index service was accessed either before it started or after it finished running.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:212)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.overrides.rcp.RcpOverrideModelProvider.acquireModel(RcpOverrideModelProvider.java:66)
+	at org.eclipse.recommenders.internal.overrides.rcp.OverrideCompletionSessionProcessor.hasModel(OverrideCompletionSessionProcessor.java:121)
+	at org.eclipse.recommenders.internal.overrides.rcp.OverrideCompletionSessionProcessor.startSession(OverrideCompletionSessionProcessor.java:86)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:304)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:170)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:288)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$3.run(ContentAssistant.java:1931)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1928)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:565)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:560)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:494)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:487)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1747)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:184)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:84)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:118)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:42:28.401
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:43:50.059
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:46:08.914
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:46:35.529
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:48:39.728
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 15:49:46.912
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:00:22.952
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:02:54.402
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:03:14.924
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:06:17.489
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:07:18.694
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:09:51.054
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:19:00.465
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:19:12.247
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:57:33.388
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\logic\Logic.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 16:58:41.746
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:10:59.976
+!MESSAGE Files removed. Reloading birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:10:59.977
+!MESSAGE Reloading core birthdayProject
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:10:59.985
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\Commons.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BD.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDPC.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\XmlOps.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:17:07.631
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:18:40.620
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class, C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:19:53.903
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:24:23.862
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:24:38.127
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\xml\BDP.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:25:50.628
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:35:13.866
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]
+
+!ENTRY org.infinitest.eclipse 1 0 2018-05-26 17:37:39.494
+!MESSAGE birthdayProject Files changed: [C:\Users\marku\Desktop\birthdays\birthdayProject\bin\run\Run.class]

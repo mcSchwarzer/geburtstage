@@ -1,0 +1,107 @@
+package birthdayProjectV2;
+
+import java.time.MonthDay;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+
+public class Person {
+
+	/**add bindings for JSON**/
+	
+	private String fname;
+	private String sname;
+	private ZonedDateTime dayOfBirth;
+	private int age;
+	private int phonenb;
+	private String email;
+
+	
+	public Person(String fname){
+		this.fname = fname;
+	}
+	public Person(String fname, String sname,ZonedDateTime dayOfBirth, int pnb, String email) throws IllegalArgumentException{
+		this.fname = fname;
+		this.sname = sname;
+		this.dayOfBirth = dayOfBirth;
+		this.phonenb = pnb;
+		this.email = email;
+		this.age = this.calcAge(dayOfBirth);
+	}
+
+	private int calcAge(ZonedDateTime bd)throws IllegalArgumentException{
+		if(bd.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null! " + this.toString() + "calcAge()");
+		}
+		ZonedDateTime now = ZonedDateTime.now();
+		return (now.getYear() - bd.getYear());
+	}
+	
+	public boolean hasBirthday()throws IllegalArgumentException{
+		ZonedDateTime now = ZonedDateTime.now();
+		if(this.dayOfBirth.equals(null)){
+			throw new IllegalArgumentException("The birthday can't be null! " + this.toString() + " hasBirthday()");
+		}
+		if(now.isEqual(this.dayOfBirth)){
+			return true;
+		}
+		return false;
+	}
+	
+	public MonthDay dayOfBirthtoMonthDay(){
+		return MonthDay.of(dayOfBirth.getMonthValue(), dayOfBirth.getDayOfMonth());
+	}
+	
+	public String getBirthdayMessage(){
+		return ("Hi " + this.fname + ". Alles Gute zum" + this.age + "ten Geburtstag!");
+	}
+	
+	public long getDaysTillBirthday(){
+		ZonedDateTime now = ZonedDateTime.now();
+		long dayDelta = now.until(this.dayOfBirth.plusYears(this.age), ChronoUnit.DAYS);
+		return dayDelta; 
+		
+	}
+	
+	public String getFname() {
+		return fname;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public int getAge() {
+		return age;
+	}
+	public int getPhonenb() {
+		return phonenb;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void setPhonenb(int phonenb) {
+		this.phonenb = phonenb;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public ZonedDateTime getDayOfBirth() {
+		return dayOfBirth;
+	}
+	public void setDayOfBirth(ZonedDateTime dayOfBirth) {
+		this.dayOfBirth = dayOfBirth;
+	}
+
+	@Override 
+	public String toString(){
+		return (this.fname + " " + this.sname + ", " + this.age + "( " + this.email + ", " + this.phonenb + " )");
+	}
+}

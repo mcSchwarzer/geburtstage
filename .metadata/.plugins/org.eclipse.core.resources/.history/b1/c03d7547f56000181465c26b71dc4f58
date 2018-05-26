@@ -1,0 +1,24 @@
+package xml;
+
+import java.util.Scanner;
+
+public interface Commons {
+	
+	int daysOfYear = 365; 
+	public static final String XmlInputPath = 
+			"C:\\Users\\marku\\Desktop\\birthdays\\birthdayProject\\xml\\PersonenListe\\XML_input.xml";
+	public static final String XmlStyle = 
+			"C:\\Users\\marku\\Desktop\\birthdays\\xml\\PersonenListe\\XML_style.xml";
+	public static final String logPlace = 
+			"C:\\Users\\marku\\Desktop\\birthdays\\birthdayProject\\log\\";
+	
+	public static final String startingText= 
+			"Hi this is a program that keeps track of all the birthdays that you, your family or any other"
+					+ "person has!\n"
+			+ "For this to work you have to have a valid xml-file at \"" + XmlInputPath + "\" that has to "
+					+ "follow this xml-style in \" "+ XmlStyle + "\"\n\n"
+			+ "Press any key to start ...\n";
+
+	Scanner scan = new Scanner(System.in);
+	
+}
